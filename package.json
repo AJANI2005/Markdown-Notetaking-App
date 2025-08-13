@@ -1,0 +1,22 @@
+{
+  "name": "markdown-notetaking-app",
+  "version": "1.0.0",
+  "description": "This app converts plain text files into markdown files.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npm run dev --prefix app\" \"npm run dev --prefix server\"",
+    "clean": "rimraf node_modules server/node_modules app/node_modules",
+    "build": "npm run build --prefix app",
+    "start": "npm run build --prefix app && npm start --prefix server",
+    "install-all": "npm install && npm install --prefix server && npm install --prefix app"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "concurrently": "^9.2.0",
+    "rimraf": "^6.0.1"
+  }
+}
