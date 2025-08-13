@@ -11,56 +11,45 @@
 1. Clone the repository:
 
    ```bash
-   git clone https://your-repo-url.git
+   git clone https://github.com/AJANI2005/Markdown-Notetaking-App.git
    cd Markdown-Notetaking-App
 
-    Install dependencies:
+## How to Run the App
 
-        In root (if applicable):
 
-npm install
+2. Install all dependencies for the root, backend, and frontend:
 
-In backend (server):
+```bash
+npm run install-all
 
-npm install --prefix server
+```
+## Development
 
-In frontend (app):
+To start both the frontend and backend servers concurrently in development mode:
 
-        npm install --prefix app
-
-Development
-
-To run both backend and frontend concurrently:
-
+```bash
 npm run dev
+```
 
-    Backend runs on http://localhost:5000
+    Frontend Vite dev server runs on http://localhost:5173
+    Backend Express server runs on http://localhost:5000
 
-    Frontend runs on http://localhost:5173
+## Production Build and Start
 
-Production Build and Run
+To build the frontend and start the backend server (which serves the built frontend):
 
-    Build the frontend:
+npm start
 
-npm run build --prefix app
+    This runs the frontend build (app/dist) then starts the Express server.
 
-Start the backend server:
-
-    npm start --prefix server
-
-    Backend serves the built frontend from app/dist
-
-    App available at http://localhost:5000
+    The full app will be available at http://localhost:5000
 
 Cleaning
 
-To delete all node_modules folders:
+To remove all node_modules folders from root, backend, and frontend:
 
+```bash
 npm run clean
+```
 
-Then reinstall dependencies as above.
-Notes
-
-    Build frontend before starting backend in production
-
-    Backend API available at /notes (GET, POST, DELETE)
+After cleaning, run npm run install-all to reinstall dependencies.
