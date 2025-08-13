@@ -16,13 +16,12 @@
 
 ## How to Run the App
 
-
 2. Install all dependencies for the root, backend, and frontend:
 
 ```bash
 npm run install-all
-
 ```
+
 ## Development
 
 To start both the frontend and backend servers concurrently in development mode:
@@ -31,18 +30,20 @@ To start both the frontend and backend servers concurrently in development mode:
 npm run dev
 ```
 
-    Frontend Vite dev server runs on http://localhost:5173
-    Backend Express server runs on http://localhost:5000
+Frontend Vite dev server runs on http://localhost:5173
+Backend Express server runs on http://localhost:5000
 
 ## Production Build and Start
 
 To build the frontend and start the backend server (which serves the built frontend):
 
+```bash
 npm start
+```
 
-    This runs the frontend build (app/dist) then starts the Express server.
+This runs the frontend build (app/dist) then starts the Express server.
 
-    The full app will be available at http://localhost:5000
+The full app will be available at http://localhost:5000
 
 Cleaning
 
